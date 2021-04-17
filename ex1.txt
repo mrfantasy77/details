@@ -1,1 +1,180 @@
 hi hello hey
+
+
+navee@LAPTOP-FGU4FPMG MINGW64 ~
+$ cd e:
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e
+$ cd github\ project/
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ notepad ex1.txt
+/usr/bin/notepad: line 10: exec: notepad.exe: not found
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ notepad++ ex1.txt
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ex1.txt
+        project1/
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git commit -m "first repository"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'navee@LAPTOP-FGU4FPMG.(none)')
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ ^C
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git cofig --global user.email "naveenselvam752@gmail.com"
+git: 'cofig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git config --global user.email "naveenselvam752@gmail.com"
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git config --global user.name "naveenselvam"
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git commit -m "first repository"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ex1.txt
+        project1/
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git add ex1.txt
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git commit -m "first repository"
+[master (root-commit) 13aa7aa] first repository
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ex1.txt
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git log
+commit 13aa7aa5ef69a22368dd45bdf52835861094d6ae (HEAD -> master)
+Author: naveenselvam <naveenselvam752@gmail.com>
+Date:   Thu Apr 15 16:16:18 2021 +0530
+
+    first repository
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git remote add origin https://github.com/mrfantasy77/repo1.git
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git remote-v
+git: 'remote-v' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote-fd
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git remote -v
+origin  https://github.com/mrfantasy77/repo1.git (fetch)
+origin  https://github.com/mrfantasy77/repo1.git (push)
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git push -u
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git push -u origin master
+
+Unhandled Exception: System.ComponentModel.Win32Exception: Invalid window handle
+   at MS.Win32.ManagedWndProcTracker.HookUpDefWindowProc(IntPtr hwnd)
+   at MS.Win32.ManagedWndProcTracker.OnAppDomainProcessExit()
+   at MS.Internal.ShutDownListener.HandleShutDown(Object sender, EventArgs e)
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 225 bytes | 56.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mrfantasy77/repo1.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git add ex1.txt
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        project1/
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git commit -m "this is my second commit"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        project1/
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        project1/
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$ git log
+commit 13aa7aa5ef69a22368dd45bdf52835861094d6ae (HEAD -> master, origin/master)
+Author: naveenselvam <naveenselvam752@gmail.com>
+Date:   Thu Apr 15 16:16:18 2021 +0530
+
+    first repository
+
+navee@LAPTOP-FGU4FPMG MINGW64 /e/github project (master)
+$
